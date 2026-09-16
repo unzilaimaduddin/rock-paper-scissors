@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Rock Paper Scissors</h1>
+    </div>
+
+    <p class="winning-info">First to 5 wins! 🏆</p>
+
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="rock.png" />
+        </div>
+        <div class="choice" id="paper">
+            <img src="paper.png" />
+        </div>
+        <div class="choice" id="scissors">
+            <img src="scissors.png" />
+        </div>
+    </div>
+
+    <div class="battle-container">
+        <div class="battle-choice">
+            <p>You</p>
+            <div class="battle-img" id="user-battle">❓</div>
+        </div>
+        <div class="vs-text">VS</div>
+        <div class="battle-choice">
+            <p>Computer</p>
+            <div class="battle-img" id="comp-battle">❓</div>
+        </div>
+    </div>
+
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+
+
+    <div class="msg-container">
+        <p id="msg">Play Your move</p>
+    </div>
+
+    <div id="winner-popup" class="popup">
+        <div class="popup-box">
+            <h2 id="popup-text">Congratulations, Winner is you 🎉</h2>
+            <button id="play-again">New Game</button>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button id="reset-button">Reset Game</button>
+        <button id="theme-btn">🌙 Dark Mode</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
